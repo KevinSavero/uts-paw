@@ -1,10 +1,100 @@
 [
   {
-    "id": "1",
-    "judul": "Contoh item pertama",
-    "kategori": "Contoh",
-    "fieldTema1": "ganti sesuai field tema",
-    "fieldTema2": 0,
-    "fieldTema3": "ganti sesuai field tema"
+    "id": "01",
+    "judul": "Komputer Desktop",
+    "kategori": "Perangkat Komputer",
+    "kodeAlat": "KOM",
+    "jumlah": 30,
+    "kondisi": "Sangat Baik"
+  },
+
+  {
+    "id": "02",
+    "judul": "Monitor",
+    "kategori": "Perangkat Komputer",
+    "kodeAlat": "MON",
+    "jumlah": 30,
+    "kondisi": "Sangat Baik"
+  },
+
+  {
+    "id": "03",
+    "judul": "Keyboard",
+    "kategori": "Perangkat Komputer",
+    "kodeAlat": "KEY",
+    "jumlah": 30,
+    "kondisi": "Sangat Baik"
+  },
+
+  {
+    "id": "04",
+    "judul": "Mouse",
+    "kategori": "Perangkat Komputer",
+    "kodeAlat": "MOU",
+    "jumlah": 30,
+    "kondisi": "Sangat Baik"
+  },
+
+  {
+    "id": "05",
+    "judul": "Proyektor",
+    "kategori": "Perangkat Pendukung",
+    "kodeAlat": "PRO",
+    "jumlah": 1,
+    "kondisi": "Baik"
+  },
+
+  {
+    "id": "06",
+    "judul": "Printer",
+    "kategori": "Perangkat Pendukung",
+    "kodeAlat": "PRINT",
+    "jumlah": 1,
+    "kondisi": "Baik"
+  },
+
+  {
+    "id": "07",
+    "judul": "Switch Jaringan",
+    "kategori": "Perangkat Jaringan",
+    "kodeAlat": "SWTCH",
+    "jumlah": 2,
+    "kondisi": "Sangat Baik"
+  },
+
+  {
+    "id": "08",
+    "judul": "Router",
+    "kategori": "Perangkat Jaringan",
+    "kodeAlat": "RTR",
+    "jumlah": 1,
+    "kondisi": "Sangat Baik"
+  },
+
+  {
+    "id": "09",
+    "judul": "Access Point",
+    "kategori": "Perangkat Jaringan",
+    "kodeAlat": "AP",
+    "jumlah": 2,
+    "kondisi": "Sangat Baik"
+  },
+
+  {
+    "id": "10",
+    "judul": "Power Supply",
+    "kategori": "Perangkat Pendukung",
+    "kodeAlat": "PS",
+    "jumlah": 1,
+    "kondisi": "Sangat Baik"
+  },
+
+  {
+    "id": "11",
+    "judul": "Papan Tulis",
+    "kategori": "Perangkat Pendukung",
+    "kodeAlat": "PT",
+    "jumlah": 2,
+    "kondisi": "Baik"
   }
 ]
