@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import useKoleksi from '../hooks/useKoleksi.js'
 import './Tambah.css'
 
-const AWAL = { judul: '', kategori: 'Kuliah', tenggat: '', prioritas: 'sedang' }
+const AWAL = { judul: '', kategori: '', id: '', kondisi: '', kodeAlat: '', jumlah: ''}
 
 export default function Tambah() {
   const { tambah } = useKoleksi()
@@ -16,7 +16,7 @@ export default function Tambah() {
   const simpan = (e) => {
     e.preventDefault()
     if (form.judul.trim().length < 3) {
-      setGalat('Judul wajib diisi, minimal 3 karakter.')
+      setGalat('Judul Alat wajib diisi, minimal 3 karakter.')
       return
     }
     tambah({ ...form, judul: form.judul.trim() })
@@ -25,27 +25,37 @@ export default function Tambah() {
 
   return (
     <form className="formulir" onSubmit={simpan} noValidate>
-      <h1>Tambah Tugas</h1>
+      <h1>Tambah Aset</h1>
 
-      <label htmlFor="judul">Judul</label>
+      <label htmlFor="judul">Judul / Nama Alat</label>
       <input id="judul" name="judul" value={form.judul} onChange={ubah} />
       {galat && <p role="alert">{galat}</p>}
 
       <label htmlFor="kategori">Kategori</label>
       <select id="kategori" name="kategori" value={form.kategori} onChange={ubah}>
-        <option>Kuliah</option>
-        <option>Organisasi</option>
+        <option>Pilih Kategori</option>
+        <option>Perangkat Komputer</option>
+        <option>Perangkat Jaringan</option>
+        <option>Perangkat Pendukung</option>
+
       </select>
 
-      <label htmlFor="tenggat">Tenggat</label>
-      <input id="tenggat" name="tenggat" type="date" value={form.tenggat} onChange={ubah} />
+      <label htmlFor="id">ID Aset</label>
+      <input id="id" name="id" type="number" value={form.id} onChange={ubah} />
 
-      <label htmlFor="prioritas">Prioritas</label>
-      <select id="prioritas" name="prioritas" value={form.prioritas} onChange={ubah}>
-        <option value="rendah">Rendah</option>
-        <option value="sedang">Sedang</option>
-        <option value="tinggi">Tinggi</option>
+      <label htmlFor="kondisi">Kondisi</label>
+      <select id="kondisi" name="kondisi" value={form.kondisi} onChange={ubah}>
+        <option value="PilihKondisi">Pilih Kondisi</option>
+        <option value="SangatBaik">Sangat Baik</option>
+        <option value="Baik">Baik</option>
+        <option value="PerluPerbaikan">Perlu Perbaikan</option>
       </select>
+
+      <label htmlFor="kodeAlat">Kode Alat</label>
+      <input id="kodeAlat" name="kodeAlat" value={form.kodeAlat} onChange={ubah} />
+
+      <label htmlFor="jumlah">Jumlah</label>
+      <input id="jumlah" name="jumlah" type="number" value={form.jumlah} onChange={ubah} />
 
       <button type="submit">Simpan</button>
     </form>
