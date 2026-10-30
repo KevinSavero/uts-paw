@@ -65,17 +65,21 @@ Ganti seluruh isi berkas ini dengan dokumentasi aplikasimu (butir rubrik A4). Ke
 ```markdown
 # Nama Aplikasi
 
-Nama: ...
-NIM: ...
-Kelas: ...
-Tema: ...
-Deployment: https://USERNAME.github.io/uts-paw/
+Nama  : Kevin Savero
+NIM   : 124140143
+Kelas : RA
+Tema  : Inventaris Laboratorium
+Deployment: https://kevinsavero.github.io/uts-paw/
 
 ![Tangkapan layar beranda](docs/beranda.png)
 
 ## Fitur
 
-- ...
+- Dapat melihat detail isi dari koleksi aset Inventaris.
+- Terdapat fitur search dan filter untuk memudahkan mencari Inventaris Laboratorium yang ada.
+- Dapat menghapus Dafta Inventaris yang terdapat di page koleksi.
+- Terdapat fitur menambahkan aset, yang nantinya ketika telah disimpan dapat ditampilkan di page koleksi.
+- Terdapat fitur statistik untuk melihat Jumlah Inventaris dan juga Kategori nya.
 
 ## Menjalankan secara lokal
 
